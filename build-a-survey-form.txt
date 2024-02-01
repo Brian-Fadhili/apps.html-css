@@ -1,0 +1,179 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>KABRI & Co</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">KABRI & Co</h1>
+    <p id="description">Customer Satisfaction Survey</p>
+    <form id="survey-form">
+    <fieldset class="padding">
+      <label for="name" id="name-label" > Name: <input id="name" type="text" name="name" placeholder="Enter your name" required /><label>
+    </fieldset>
+    <fieldset class="padding">
+      <label for="email" id="email-label" >Email: <input id="email" type="email" name="email" placeholder="Enter your email" required /></label>
+    </fieldset>
+    <fieldset class="padding">
+      <label for="number" id="number-label" >Age: <input id="number" type="number" name="age" placeholder="Enter your age" min="12" max="120" required /></label>         
+    </fieldset>
+    <fieldset class="margin-top">
+      <legend>How did you hear about us? (Check all that apply)</legend>
+      <label for="advertisement"><input id="advertisement" type="checkbox" name="hear" value="advertisement" class="inline" /> Advertisement<label>
+        <label for="social-media"><input id="social-media" type="checkbox" name="hear" value="social-media" class="inline" /> Social Media</label>
+        <label for="word-of-mouth"><input id="word-of-mouth" type="checkbox" name="hear" value="word-of-mouth" class="inline" /> Word of Mouth</label>
+        <label for="other"><input id="other"type="checkbox" name="hear" value="other" class="inline" /> Other</label>
+        </fieldset>
+    <fieldset class="top">
+      <legend>How likely are you to recommend our products to a friend or colleague? </legend>
+      <label for="very-likely"> <input id="very-likely" type="radio" name="recommendation" value="very-likely" class="inline" checked /> Very Likely</label>
+      <label for="likely"><input id="likely" type="radio" name="recommendation" value="likely" class="inline" /> Likely</label>
+      <label for="unlikely"><input id="unlikely" type="radio" name="recommendation" value="unlikely" class="inline" /> Unlikely</label>
+      <label for="very-unlikely"><input id="very-unlikely" type="radio" name="recommendation" value="very-unlikely" class="inline" /> Very Unlikely</label>
+    </fieldset>
+    <fieldset class="top">
+      <legend>How was your experience with our customer service team?</legend>
+     <label for="excellent"><input id="excellent" type="radio" name="experience" value="excellent" class="inline" checked /> Excellent</label>
+     <label for="good"><input id="good" type="radio" name="experience" value="good" class="inline" /> Good</label>
+     <label for="average"><input id="average" type="radio" name="experience" value="average" class="inline" /> Average<label/>
+     <label for="poor"><input id="poor" type="radio" name="experience" value="poor" class="inline" /> Poor</label>
+     <label for="very-poor"><input id="very-poor" type="radio" name="experience" value="very-poor" class="inline" /> Very Poor</label>
+    </fieldset>            
+        <legend class="top">How easy was it to navigate our website?</legend>
+      <select id="dropdown">
+        <option hidden>Select an option</option>
+        <option>Very Easy</option>
+        <option>Easy</option>
+        <option>Neutral</option>
+        <option>Difficult</option >
+        <option>Very Difficult</option>
+       </select>
+    </fieldset>
+    <fieldset>
+      <label for="suggestions-comments">Do you have any <strong>suggestions</strong> on how we can improve our customer service experience? Any <strong>comments</strong>?
+        <textarea id="suggestions-comments" type="text" name="suggestions-comments" rows="5" cols="45" placeholder="Enter your suggestions or comments... " ></textarea>
+          </label>   
+    </fieldset>
+<input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+width: 100%;      
+margin: 0 auto;
+font-size: 21px;
+font-family: Tahoma;       
+background: linear-gradient(120deg, #CCFBFF, #EF96C5);
+}
+
+#title {
+  text-align: center;
+  font-family: Impact;
+  margin: 1em auto;
+}
+
+#description {
+  text-align: center;
+  font-family: Verdana;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+}
+
+#name-label {
+  margin-top: 6px;
+}
+
+#email-label {
+  margin-top: 6px;
+}
+
+#number-label {
+  margin-top: 6px;
+}
+
+#survey-form {
+  width: 60vw;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px; 
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  min-height: 2em;
+  font-size: 19px;
+}
+
+fieldset {
+  border: none;    
+  padding: 0.5px 0;
+  margin-left: -2px; 
+}
+
+.padding {
+  padding: unset;
+  margin: 1rem auto;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.top {
+  margin-top: 1.2rem;
+}
+
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin: 0.1px auto;
+  margin-left: 2.4px;
+
+}
+
+#dropdown {
+  width: 100%;
+  padding: 1rem auto;
+  min-height: 2em;
+  font-size: 19px;
+  margin-bottom:3.2rem;
+  margin-top: 0.5rem;
+
+}
+
+#suggestions-comments {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-size: 19px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 1em auto;
+  display: block;
+  margin-bottom: 2.2em;
+  min-height: 2em;
+  font-size: 22px;
+  background: linear-gradient(40deg, #43CBFF, #D875FF);
+  border: 2px solid white;
+}
+
+** end of undefined **
+
